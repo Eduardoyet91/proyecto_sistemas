@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Proyecto {% endblock title %}
+{% block navbar %}
+
+{% endblock navbar %}
+
+{% block content %}
+<main class="pb-16 bg-transparent mt-8">
+    <div class="grid sm:px-6 lg:px-8 ">
+      <ul
+        role="list"
+        class="ml-2 mr-2 sm:ml-0 sm:mr-0 border-t border-gray-200 divide-y divide-gray-200 sm:mt-0 sm:border-t-0">
+     
+        <li 
+        
+        class="bg-slate-100 dark:bg-slate-700 shadow-2xl rounded-lg px-6 my-4">
+          
+            <div class="flex items-center py-5 px-4 sm:py-6 sm:px-0">
+              <div class="min-w-0 flex-1 flex items-center hover:text-gray-700">
+          
+                <a href="/solicitud" class="text-xl font-medium text-purple-600 dark:text-blue-500 truncate hover:text-purple-900"
+                    >tarea</a>
+              </div>
+              
+              
+              
+            </div>
+          
+        </li>
+      </ul>
+     <div class="grid grid-cols-1 ml-8 w-auto justify-center px-32">
+
+      
+
+     
+        <a href="/solicitud"  class="  ml-3 mt-4 min-w-0 w-auto min-h-0 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Salir</a>
+  
+
+
+   
+      </div>
+    </div>
+  </main>
+
+  {% endblock content %}
+
+
+{% block footer %}
+
+{% endblock footer %}
+
+
+{% block javascript %}
+
+{% endblock javascript %}

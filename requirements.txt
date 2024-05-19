@@ -1,0 +1,5 @@
+mysql
+PyMySQL
+pillow
+Django
+django-tailwind

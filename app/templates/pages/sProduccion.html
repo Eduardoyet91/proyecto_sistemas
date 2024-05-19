@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Proyecto {% endblock title %}
+{% block navbar %}
+
+{% endblock navbar %}
+
+{% block content %}
+<h1 class="text-center mt-32">Selecciona un proceso de producción</h1>
+<div class="flex justify-center mt-12">
+
+  {% for opc in opciones %}
+  <a href="{% url 'produccion' opc %}" class="  ml-3 mt-4 min-w-0 w-auto min-h-0 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">{{opc}} </a>
+  
+  {% csrf_token %}
+{% endfor %} 
+</div>
+
+<br>
+<div class="flex justify-center mt-12">
+  <a href="{% url 'index' %}" class="  ml-3 mt-4 min-w-0 w-auto min-h-0 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Volver al inicio </a>
+
+</div>
+<br>
+
+
+
+
+ {% endblock content %}
+
+
+{% block footer %}
+
+{% endblock footer %}
+
+
+{% block javascript %}
+
+{% endblock javascript %}
